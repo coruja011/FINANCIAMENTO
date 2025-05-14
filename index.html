@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Banco - Financiamento e Soluções">
+    <title>Banco Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Banco Exemplo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Simulações</a></li>
+                <li><a href="#">Financiamento</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Imagem Chamativa) -->
+    <section class="main-content">
+        <div class="banner">
+            <h1>Simule seu financiamento agora!</h1>
+            <p>Simule e escolha a melhor opção de crédito para você</p>
+            <button onclick="openSimulation()">Simular Agora</button>
+        </div>
+
+        <!-- Simulação de Financiamento (Interativo) -->
+        <div class="simulation" id="simulationForm" style="display: none;">
+            <h2>Simulação de Crédito</h2>
+            <form id="simulationForm">
+                <label for="amount">Valor do Empréstimo:</label>
+                <input type="number" id="amount" placeholder="Digite o valor desejado" required>
+
+                <label for="term">Prazo (em meses):</label>
+                <input type="number" id="term" placeholder="Digite o número de meses" required>
+
+                <label for="rate">Taxa de Juros (%):</label>
+                <input type="number" id="rate" placeholder="Digite a taxa de juros" required>
+
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Banco Exemplo | Todos os direitos reservados</p>
+        <div class="footer-links">
+            <a href="#">Privacidade</a> | <a href="#">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

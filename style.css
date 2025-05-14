@@ -1,0 +1,136 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0077cc; /* Azul do Banco BV */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Seção Principal */
+.main-content {
+    padding: 50px 20px;
+    background-color: white;
+    background-image: url('background-image.jpg'); /* Imagem chamativa */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    background-color: #fff;
+    color: #0077cc;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formulário de Simulação */
+.simulation {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.simulation h2 {
+    margin-bottom: 20px;
+}
+
+.simulation form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.simulation input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.simulation button {
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.simulation button:hover {
+    background-color: #005fa3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
